@@ -1,6 +1,7 @@
 package com.example.pd4;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,6 +51,12 @@ public class SignIn extends AppCompatActivity {
                             if(user.getPassword().equals(etPassword.getText().toString())){
                                 dialog.dismiss();
                                 Toast.makeText(SignIn.this, "Signed In successfully", Toast.LENGTH_LONG).show();
+                                {
+                                    Intent homeIntent = new Intent(SignIn.this, navigation.class);
+                                    Common.currentUser = user;
+                                    startActivity(homeIntent);
+
+                                }
                             }else{
                                 dialog.dismiss();
                                 Toast.makeText(SignIn.this, "Password Incorrect", Toast.LENGTH_LONG).show();

@@ -7,11 +7,6 @@
         android:title="Home"/>
 
     <item
-        android:id="@+id/nav_browse"
-        android:icon="@drawable/ic_search_black_24dp"
-        android:title="Browse"/>
-
-    <item
         android:id="@+id/nav_cart"
         android:icon="@drawable/ic_shopping_cart_black_24dp"
         android:title="Cart"/>

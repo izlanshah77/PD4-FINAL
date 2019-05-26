@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    android:background="@drawable/bg"
+    tools:context=".PastOrders">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -17,7 +18,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingRight="16dp"
-            android:text="RECORD CRATES"
+            android:text="PAST ORDERS"
             android:fontFamily="Roboto-Medium"
             android:textStyle="italic"
             android:textColor="@android:color/white"
@@ -25,13 +26,11 @@
             />
     </android.support.v7.widget.Toolbar>
 
-
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_menu"
-        android:scrollbars="vertical"
+        android:id="@+id/pastOrder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_below="@id/toolbar"
+        android:padding="16dp"></android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
